@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Service Page</h1>
+    <hr /> -->
+
+
+    <!-- Using fragment -->
+
+
+    <!-- <div th:replace="~{base :: parent(~{::.third_content})}">
+        <section id="main_content">
+            <h1>This is Dynamic service passed to base parent</h1>
+        </section>
+        <section id="second_content">
+            <h2>This is second content</h2>
+        </section>
+        <section class="third_content">
+            <h3>This is third content</h3>
+        </section>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title})}">
+<head>
+    <title>Services Page</title>
+</head>
+<body>
+    <section id="content">
+        <h1>Welcome to Services page</h1>
+        <h2>Service is offered by SCM</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere officiis excepturi porro suscipit reprehenderit quae eius quo vel aliquam?
+    </section>
+</body>
+</html>
